@@ -1,0 +1,52 @@
+<setup>
+  <styleDefinition styleNumber="10" 
+    backgroundColor="yellow"
+    />
+</setup>
+
+<p>Find the first ten numbers in the Fibonacci Sequence.</p>
+
+<table suppressTableNameInTitle><title>Fibonacci Numbers</title>
+  <tabular top="minor" bottom="minor" left="minor" right="minor" width="50%">
+    <row>
+      <cell><m>F_1</m></cell>
+      <cell><m>1</m></cell>
+    </row>
+    <row>
+      <cell><m>F_2</m></cell>
+      <cell><m>1</m></cell>
+    </row>
+    <row>
+      <cell><m>F_3</m></cell>
+      <cell><m>2</m></cell>
+    </row>
+    <row>
+      <cell><m>F_4</m></cell>
+      <cell styleNumber="10*(1-$F6.creditAchieved)"><m>3</m></cell>
+    </row>
+    <row>
+      <cell><m>F_5</m></cell>
+      <cell styleNumber="10*(1-$F7.creditAchieved)"><m>5</m></cell>
+    </row>
+    <row>
+      <cell><m>F_6</m></cell>
+      <cell><answer name="F6" disableAfterCorrect hide="$F6.creditAchieved=1">8<shortDescription>The sixth Fibonacci number</shortDescription></answer><m hide="$F6.creditAchieved != 1" styleNumber="10*(1-$F8.creditAchieved)">8</m></cell>
+    </row>
+    <row>
+      <cell><m>F_7</m></cell>
+      <cell><answer name="F7" disableAfterCorrect hide="$F7.creditAchieved=1 or $F6.creditAchieved != 1">13<shortDescription>The seventh Fibonacci number</shortDescription></answer><m hide="$F7.creditAchieved != 1" styleNumber="10*(1-$F9.creditAchieved)">13</m></cell>
+    </row>
+    <row>
+      <cell><m>F_8</m></cell>
+      <cell><answer name="F8" disableAfterCorrect hide="$F8.creditAchieved=1 or $F7.creditAchieved != 1">21<shortDescription>The eighth Fibonacci number</shortDescription></answer><m hide="$F8.creditAchieved != 1" styleNumber="10*(1-$F10.creditAchieved)">21</m></cell>
+    </row>
+    <row>
+      <cell><m>F_9</m></cell>
+      <cell><answer name="F9" disableAfterCorrect hide="$F9.creditAchieved=1 or $F8.creditAchieved != 1">34<shortDescription>The ninth Fibonacci number</shortDescription></answer><m hide="$F9.creditAchieved != 1" styleNumber="10*(1-$F10.creditAchieved)">34</m></cell>
+    </row>
+    <row>
+      <cell><m>F_{10}</m></cell>
+      <cell><answer name="F10" disableAfterCorrect hide="$F10.creditAchieved=1 or $F9.creditAchieved != 1">55<shortDescription>The tenth Fibonacci number</shortDescription></answer><m hide="$F10.creditAchieved != 1">55</m></cell>
+    </row>
+  </tabular>
+</table>

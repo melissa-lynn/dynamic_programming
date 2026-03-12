@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="01-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction to Dynamic Programming</title>
+
+  <introduction>
+    <p> Basic examples. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="01-01-fibonacci.ptx" />
+
+</chapter>
