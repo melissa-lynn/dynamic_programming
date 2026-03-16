@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="01-01-fibonacci" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="fibonacci" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Fibonacci Sequence</title>
 
   <p> The Fibonacci Sequence is a famous sequence of numbers from mathematics. The rules for generating the Fibonacci sequence are simple: 
@@ -26,11 +26,51 @@
     </ul>
   </p>
 
+
+
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="fib-ex" component="doenet">
+
+  <exercise xml:id="ez-1-1-doenet-1">
+  <title>Finding the average velocity of a moving object from data</title>
+  <dynamic>
+    <statement>
+      <interactive label="doe-int-ex-1-1-1" platform="doenetml">
+        <slate surface="doenetml">
+          <xi:include href="test.doenetml" parse="text"/>
+        </slate>   
+      </interactive>  
+    </statement>
+  </dynamic>
+  <static/> 
+</exercise> 
+
+  <exercise>
+    <dynamic>
+      <statement>
   <interactive label="interactive-label" platform="doenetml" width="100%" aspect="2:8" version="dev">
     <slate surface="doenetml">
       <xi:include parse="text" href="fibonacci.doenetml"/>
     </slate>
-  </interactive>
+  </interactive></statement>
+  </dynamic>
+  <static/>
+</exercise>
+
+<exercise>
+    <dynamic>
+      <statement>
+  <interactive label="interactive-label-test" width="50%" platform="doenetml">
+    <slate surface="doenetml">
+      <xi:include parse="text" href="test.doenetml"/>
+    </slate>
+  </interactive></statement>
+  </dynamic>
+  <static/>
+</exercise>
+
+</exercises>
+
+<!--
 
   <listing>
     <caption>Using recursion to compute the Fibonacci Sequence</caption>
@@ -103,6 +143,6 @@
         </code>
     </program>
 </listing>
-
+-->
 
 </section>
