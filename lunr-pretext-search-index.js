@@ -19,49 +19,58 @@ var ptx_lunr_docs = [
   "body": " Section Title  Text of section.  "
 },
 {
-  "id": "01-01-fibonacci",
+  "id": "fibonacci",
   "level": "1",
-  "url": "01-01-fibonacci.html",
+  "url": "fibonacci.html",
   "type": "Section",
   "number": "2.1",
   "title": "The Fibonacci Sequence",
-  "body": " The Fibonacci Sequence  The Fibonacci Sequence is a famous sequence of numbers from mathematics. The rules for generating the Fibonacci sequence are simple:  The first Fibonacci number is 1.  The second Fibonacci number is 1.  The third Fibonacci number is the sum of the first and second Fibonacci numbers, so is .  The fourth Fibonacci number is the sum of the second and third Fibonacci numbers, so is .  The fifth Fibonacci number is the sum of the third and fourth Fibonacci numbers, so is .  This pattern continues.      Using recursion to compute the Fibonacci Sequence   def fibonacci(n): if n == 1 or n == 2: return 1 return fibonacci(n-1) + fibonacci(n-2) print(fibonacci(10))     20th Fibonacci Number   Using the code above, what is the 20th Fibonacci number?       Correct!      Incorrect, try again. Call the function fibonacci on 20.        Tracking the number of recursive calls   def fibonacci(n): print(\"Calling fibonacci on \", n) if n == 1 or n == 2: return 1 return fibonacci(n-1) + fibonacci(n-2) fibonacci(10)     Tracking the number of recursive calls   num_calls = 0 def fibonacci(n): global num_calls num_calls += 1 if n == 1 or n == 2: return 1 return fibonacci(n-1) + fibonacci(n-2) fibonacci(10) print(\"Total number of calls to fibonacci:\", num_calls)    "
+  "body": " The Fibonacci Sequence  The Fibonacci Sequence is a famous sequence of numbers from mathematics. The rules for generating the Fibonacci sequence are simple:  The first Fibonacci number is 1.  The second Fibonacci number is 1.  The third Fibonacci number is the sum of the first and second Fibonacci numbers, so is .  The fourth Fibonacci number is the sum of the second and third Fibonacci numbers, so is .  The fifth Fibonacci number is the sum of the third and fourth Fibonacci numbers, so is .  This pattern continues.     Finding the average velocity of a moving object from data          "
 },
 {
-  "id": "01-01-fibonacci-4",
+  "id": "ez-1-1-doenet-1",
   "level": "2",
-  "url": "01-01-fibonacci.html#01-01-fibonacci-4",
-  "type": "Listing",
+  "url": "fibonacci.html#ez-1-1-doenet-1",
+  "type": "Exercise",
   "number": "2.1.1",
-  "title": "Using recursion to compute the Fibonacci Sequence",
-  "body": " Using recursion to compute the Fibonacci Sequence   def fibonacci(n): if n == 1 or n == 2: return 1 return fibonacci(n-1) + fibonacci(n-2) print(fibonacci(10))   "
+  "title": "Finding the average velocity of a moving object from data.",
+  "body": "Finding the average velocity of a moving object from data   "
 },
 {
-  "id": "fillin-integer",
+  "id": "fib-ex-2",
   "level": "2",
-  "url": "01-01-fibonacci.html#fillin-integer",
-  "type": "Checkpoint",
+  "url": "fibonacci.html#fib-ex-2",
+  "type": "Exercise",
   "number": "2.1.2",
-  "title": "20th Fibonacci Number.",
-  "body": " 20th Fibonacci Number   Using the code above, what is the 20th Fibonacci number?       Correct!      Incorrect, try again. Call the function fibonacci on 20.      "
+  "title": "",
+  "body": " "
 },
 {
-  "id": "01-01-fibonacci-6",
+  "id": "fib-ex-3",
   "level": "2",
-  "url": "01-01-fibonacci.html#01-01-fibonacci-6",
-  "type": "Listing",
+  "url": "fibonacci.html#fib-ex-3",
+  "type": "Exercise",
   "number": "2.1.3",
-  "title": "Tracking the number of recursive calls",
-  "body": " Tracking the number of recursive calls   def fibonacci(n): print(\"Calling fibonacci on \", n) if n == 1 or n == 2: return 1 return fibonacci(n-1) + fibonacci(n-2) fibonacci(10)   "
+  "title": "",
+  "body": " "
 },
 {
-  "id": "01-01-fibonacci-7",
+  "id": "ez-1-1-D",
+  "level": "1",
+  "url": "ez-1-1-D.html",
+  "type": "Exercises",
+  "number": "2.2",
+  "title": "Exercises",
+  "body": " Finding the average velocity of a moving object from data    "
+},
+{
+  "id": "ez-1-1-doenet-2",
   "level": "2",
-  "url": "01-01-fibonacci.html#01-01-fibonacci-7",
-  "type": "Listing",
-  "number": "2.1.4",
-  "title": "Tracking the number of recursive calls",
-  "body": " Tracking the number of recursive calls   num_calls = 0 def fibonacci(n): global num_calls num_calls += 1 if n == 1 or n == 2: return 1 return fibonacci(n-1) + fibonacci(n-2) fibonacci(10) print(\"Total number of calls to fibonacci:\", num_calls)   "
+  "url": "ez-1-1-D.html#ez-1-1-doenet-2",
+  "type": "Exercise",
+  "number": "2.2.1",
+  "title": "Finding the average velocity of a moving object from data.",
+  "body": "Finding the average velocity of a moving object from data   "
 },
 {
   "id": "backmatter-2",
