@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-intro-memo-tab" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Tabulation and Memoization</title>
+
+  <p>This section discusses the difference between tabulation and memoization, using the Fibonacci sequence as an example. </p>
+
+</section>
