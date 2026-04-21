@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-tilings-figure" width="310" height="635" viewBox="0 0 310 635">
+  <defs>
+    <clipPath id="prefigure-tilings-clipPath-0">
+      <rect x="5.0" y="5.0" width="300.0" height="625.0"/>
+    </clipPath>
+    <clipPath id="prefigure-tilings-clipPath-1">
+      <rect x="5.0" y="5.0" width="300.0" height="625.0"/>
+    </clipPath>
+  </defs>
+  <path id="prefigure-tilings-path-0" d="M 30.0 30.0 L 30.0 80.0 L 80.0 80.0 L 80.0 30.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-1" d="M 130.0 30.0 L 130.0 80.0 L 80.0 80.0 L 80.0 30.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-2" d="M 130.0 30.0 L 130.0 80.0 L 180.0 80.0 L 180.0 30.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-3" d="M 230.0 30.0 L 230.0 80.0 L 180.0 80.0 L 180.0 30.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-4" d="M 230.0 30.0 L 230.0 80.0 L 280.0 80.0 L 280.0 30.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-5" d="M 30.0 105.0 L 30.0 155.0 L 80.0 155.0 L 80.0 105.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-6" d="M 130.0 105.0 L 130.0 155.0 L 80.0 155.0 L 80.0 105.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-7" d="M 130.0 105.0 L 130.0 155.0 L 180.0 155.0 L 180.0 105.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-8" d="M 280.0 105.0 L 280.0 155.0 L 180.0 155.0 L 180.0 105.0 Z" stroke="black" stroke-width="2" fill="red" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-9" d="M 30.0 180.0 L 30.0 230.0 L 80.0 230.0 L 80.0 180.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-10" d="M 130.0 180.0 L 130.0 230.0 L 80.0 230.0 L 80.0 180.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-11" d="M 130.0 180.0 L 130.0 230.0 L 230.0 230.0 L 230.0 180.0 Z" stroke="black" stroke-width="2" fill="red" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-12" d="M 230.0 180.0 L 230.0 230.0 L 280.0 230.0 L 280.0 180.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-13" d="M 30.0 255.0 L 30.0 305.0 L 80.0 305.0 L 80.0 255.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-14" d="M 80.0 255.0 L 80.0 305.0 L 180.0 305.0 L 180.0 255.0 Z" stroke="black" stroke-width="2" fill="red" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-15" d="M 180.0 255.0 L 180.0 305.0 L 230.0 305.0 L 230.0 255.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-16" d="M 230.0 255.0 L 230.0 305.0 L 280.0 305.0 L 280.0 255.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-17" d="M 30.0 330.0 L 30.0 380.0 L 130.0 380.0 L 130.0 330.0 Z" stroke="black" stroke-width="2" fill="red" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-18" d="M 130.0 330.0 L 130.0 380.0 L 180.0 380.0 L 180.0 330.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-19" d="M 180.0 330.0 L 180.0 380.0 L 230.0 380.0 L 230.0 330.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-20" d="M 230.0 330.0 L 230.0 380.0 L 280.0 380.0 L 280.0 330.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-21" d="M 30.0 405.0 L 30.0 455.0 L 80.0 455.0 L 80.0 405.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-22" d="M 80.0 405.0 L 80.0 455.0 L 180.0 455.0 L 180.0 405.0 Z" stroke="black" stroke-width="2" fill="red" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-23" d="M 180.0 405.0 L 180.0 455.0 L 280.0 455.0 L 280.0 405.0 Z" stroke="black" stroke-width="2" fill="red" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-24" d="M 30.0 480.0 L 30.0 530.0 L 130.0 530.0 L 130.0 480.0 Z" stroke="black" stroke-width="2" fill="red" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-25" d="M 130.0 480.0 L 130.0 530.0 L 180.0 530.0 L 180.0 480.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-26" d="M 180.0 480.0 L 180.0 530.0 L 280.0 530.0 L 280.0 480.0 Z" stroke="black" stroke-width="2" fill="red" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-27" d="M 30.0 555.0 L 30.0 605.0 L 130.0 605.0 L 130.0 555.0 Z" stroke="black" stroke-width="2" fill="red" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-28" d="M 130.0 555.0 L 130.0 605.0 L 230.0 605.0 L 230.0 555.0 Z" stroke="black" stroke-width="2" fill="red" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+  <path id="prefigure-tilings-path-29" d="M 230.0 555.0 L 230.0 605.0 L 280.0 605.0 L 280.0 555.0 Z" stroke="black" stroke-width="2" fill="blue" clip-path="url(#prefigure-tilings-clipPath-1)"/>
+</svg>
