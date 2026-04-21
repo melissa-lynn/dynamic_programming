@@ -3,6 +3,261 @@
 <section xml:id="sec-intro-tiling" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Tiling Problems</title>
 
-  <p>This section covers tiling problems. </p>
+  <p>Suppose we have a <m>1\times n</m> board that we wish to cover completely with tiles, without having any tiles overlap. The tiles that we have available are <m>1\times 1</m> blue tiles and <m>1\times 2</m> red tiles. How many ways can we tile our <m>1\times n</m> board using these tiles?</p>
+
+  <p>For example, let's count how many ways we can tile a <m>1\times 5</m> board. The combinations are pictured below.</p>
+
+  <image width = "100%">
+    <prefigure xmlns="https://prefigure.org"
+             label="prefigure-tilings">
+      <diagram dimensions="(300,625)" margins="5">
+  <coordinates bbox="(-4.5,-8,1.5,4.5)">
+    <polygon points="((-4,4),(-4,3),(-3,3),(-3,4))" closed="yes"
+             fill="blue" stroke="black"/>
+    <polygon points="((-2,4),(-2,3),(-3,3),(-3,4))" closed="yes"
+             fill="blue" stroke="black"/>
+    <polygon points="((-2,4),(-2,3),(-1,3),(-1,4))" closed="yes"
+             fill="blue" stroke="black"/>
+    <polygon points="((0,4),(0,3),(-1,3),(-1,4))" closed="yes"
+             fill="blue" stroke="black"/>
+    <polygon points="((0,4),(0,3),(1,3),(1,4))" closed="yes"
+             fill="blue" stroke="black"/>
+
+    <polygon points="((-4,2.5),(-4,1.5),(-3,1.5),(-3,2.5))" closed="yes"
+             fill="blue" stroke="black"/>
+    <polygon points="((-2,2.5),(-2,1.5),(-3,1.5),(-3,2.5))" closed="yes"
+             fill="blue" stroke="black"/>
+    <polygon points="((-2,2.5),(-2,1.5),(-1,1.5),(-1,2.5))" closed="yes"
+             fill="blue" stroke="black"/>
+    <polygon points="((1,2.5),(1,1.5),(-1,1.5),(-1,2.5))" closed="yes"
+             fill="red" stroke="black"/>
+
+    <polygon points="((-4,1),(-4,0),(-3,0),(-3,1))" closed="yes"
+             fill="blue" stroke="black"/>
+    <polygon points="((-2,1),(-2,0),(-3,0),(-3,1))" closed="yes"
+             fill="blue" stroke="black"/>
+    <polygon points="((-2,1),(-2,0),(0,0),(0,1))" closed="yes"
+             fill="red" stroke="black"/>
+    <polygon points="((0,1),(0,0),(1,0),(1,1))" closed="yes"
+             fill="blue" stroke="black"/>
+
+    <polygon points="((-4,-.5),(-4,-1.5),(-3,-1.5),(-3,-.5))" closed="yes"
+             fill="blue" stroke="black"/>
+    <polygon points="((-3,-.5),(-3,-1.5),(-1,-1.5),(-1,-.5))" closed="yes"
+             fill="red" stroke="black"/>
+    <polygon points="((-1,-.5),(-1,-1.5),(0,-1.5),(0,-.5))" closed="yes"
+             fill="blue" stroke="black"/>
+    <polygon points="((0,-.5),(0,-1.5),(1,-1.5),(1,-.5))" closed="yes"
+             fill="blue" stroke="black"/>
+
+    <polygon points="((-4,-2),(-4,-3),(-2,-3),(-2,-2))" closed="yes"
+             fill="red" stroke="black"/>
+    <polygon points="((-2,-2),(-2,-3),(-1,-3),(-1,-2))" closed="yes"
+             fill="blue" stroke="black"/>
+    <polygon points="((-1,-2),(-1,-3),(0,-3),(0,-2))" closed="yes"
+             fill="blue" stroke="black"/>
+    <polygon points="((0,-2),(0,-3),(1,-3),(1,-2))" closed="yes"
+             fill="blue" stroke="black"/>
+
+    <polygon points="((-4,-3.5),(-4,-4.5),(-3,-4.5),(-3,-3.5))" closed="yes"
+             fill="blue" stroke="black"/>
+    <polygon points="((-3,-3.5),(-3,-4.5),(-1,-4.5),(-1,-3.5))" closed="yes"
+             fill="red" stroke="black"/>
+    <polygon points="((-1,-3.5),(-1,-4.5),(1,-4.5),(1,-3.5))" closed="yes"
+             fill="red" stroke="black"/>
+
+    <polygon points="((-4,-5),(-4,-6),(-2,-6),(-2,-5))" closed="yes"
+             fill="red" stroke="black"/>
+    <polygon points="((-2,-5),(-2,-6),(-1,-6),(-1,-5))" closed="yes"
+             fill="blue" stroke="black"/>
+    <polygon points="((-1,-5),(-1,-6),(1,-6),(1,-5))" closed="yes"
+             fill="red" stroke="black"/>
+
+    <polygon points="((-4,-6.5),(-4,-7.5),(-2,-7.5),(-2,-6.5))" closed="yes"
+             fill="red" stroke="black"/>
+    <polygon points="((-2,-6.5),(-2,-7.5),(0,-7.5),(0,-6.5))" closed="yes"
+             fill="red" stroke="black"/>
+    <polygon points="((0,-6.5),(0,-7.5),(1,-7.5),(1,-6.5))" closed="yes"
+             fill="blue" stroke="black"/>
+
+    
+  </coordinates>
+</diagram>
+
+             </prefigure>
+             </image>
+
+  <p>We can tile our board in the following ways:
+    <ul>
+      <li><p>5 blue tiles.</p></li>
+      <li><p>3 blue tiles, 1 red tile.</p></li>
+      <li><p>2 blue tiles, 1 red tile, 1 blue tile.</p></li>
+      <li><p>1 blue tile, 1 red tile, 2 blue tiles.</p></li>
+      <li><p>1 red tile, 3 blue tiles.</p></li>
+      <li><p>1 blue tile, 2 red tiles.</p></li>
+      <li><p>1 red tile, 1 blue tile, 1 red tile.</p></li>
+      <li><p>2 red tiles, 1 blue tile.</p></li>
+    </ul>
+    This gives us a total of 8 ways to tile our board.
+    </p>
+
+    <p>Now, how can we find the number of ways to tile an <m>1\times n</m> board with <m>1\times 1</m> blue tiles and <m>1\times 2</m> red tiles? For large values of <m>n</m>, it would become very difficult to count the possibilities, so we would like a better way.</p>
+
+    <p>Here, we'll use a common algorithmic design strategy: reduce the problem to smaller problems. This is done using the following key observation.</p>
+
+    <insight>
+      <title>Key Insight to Tiling Problems</title>
+      <p>When we tile a <m>1\times n</m> board with <m>1\times 1</m> blue tiles and <m>1\times 2</m> red tiles, every tiling will end with either a blue tile or a red tile.</p>
+    </insight>
+
+    <p>This means that to find the total number of tilings for a <m>1\times n</m> board, we find the number of tilings that end with a blue tile and add that to the number of tilings that end with a red tile.</p>
+
+    <p>How do we find the number of tilings that end with a blue tile? A blue tile fills in the last slot on the board, leaving <m>n-1</m> open slots for tiles. This means that the number of tilings that end with a blue tile is the same as the number of ways to tile a <m>1\times (n-1)</m> board with <m>1\times 1</m> blue tiles and <m>1\times 2</m> red tiles.</p>
+
+    <p>Similarly, to find the number of tilings that end with a red tile, notice that a red tile fills in the last two slots on the board, leaving <m>n-2</m> open slots for tiles. This means that the number of tilings that end with a red tile is the same as the number of ways to tile a <m>1\times (n-2)</m> board with <m>1\times 1</m> blue tiles and <m>1\times 2</m> red tiles.</p>
+
+    <p>Putting these together, if we write <m>T(n)</m> for the number of ways to tile a <m>1\times n</m> board, we have discovered the following relationship:
+      <md>T(n) = T(n-1) + T(n-2).</md>
+      We can use this recursive relationship to compute the number of ways to tile a board, once we figure out our base cases.
+    </p>
+
+<exercise label="tiling_base1">
+            <title>Base Case: <m>n=1</m></title>
+
+            <statement>
+                <p>When <m>n=1</m>, how many ways are there to tile a <m>1\times n</m> board with <m>1\times 1</m> blue tiles and <m>1\times 2</m> red tiles? <var width="16"/></p>
+            </statement>
+            <setup>
+                <var>
+                    <condition number="1">
+                        <feedback>
+                            <p>Correct! The only way to tile a <m>1\times 1</m> board is using 1 blue tile.</p>
+                        </feedback>
+                    </condition>
+                    <condition string=".*">
+                        <feedback>
+                            <p>Incorrect, try again.</p>
+                        </feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
+        <exercise label="tiling_base2">
+            <title>Base Case: <m>n=2</m></title>
+
+            <statement>
+                <p>When <m>n=2</m>, how many ways are there to tile a <m>1\times n</m> board with <m>1\times 1</m> blue tiles and <m>1\times 2</m> red tiles? <var width="16"/></p>
+            </statement>
+            <setup>
+                <var>
+                    <condition number="2">
+                        <feedback>
+                            <p>Correct! We can tile a <m>1\times 1</m> board using 2 blue tiles, or using 1 red tile.</p>
+                        </feedback>
+                    </condition>
+                    <condition string=".*">
+                        <feedback>
+                            <p>Incorrect, try again.</p>
+                        </feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
+
+      <p>When <m>n=3</m>, we can use <m>T(3) = T(2) + T(1)</m>, so the base cases <m>n=1</m> and <m>n=2</m> are sufficient.</p>
+
+      <p>Putting all of these together, we can use the following formulas to find the number of ways <m>T(n)</m> to tile a <m>1\times n</m> board with <m>1\times 1</m> blue tiles and <m>1\times 2</m> red tiles.
+      <ul>
+        <li>
+          <p>
+            <m>T(1) = 1</m>
+          </p>
+        </li>
+        <li><p><m>T(2) = 2</m></p></li>
+        <li><p><m>T(n) = T(n-1) + T(n-2)</m> for <m>n\geq 3</m></p></li>
+      </ul>
+      We can use these to define a function to compute the number of tilings.
+      </p>
+
+      <program language="python">
+        def num_tilings(n):
+          if n &lt;= 1:
+            return 1
+          if n == 2:
+            return 2
+          return num_tilings(n-1) + num_tilings(n-2)
+      </program>
+
+    <exercise label="tiling_mc">
+      <statement>
+        <p>The function is above is not ideal. What is wrong with it?</p>
+      </statement>
+      <choices>
+        <choice>
+          <statement>
+            <p>It does not always produce the correct results.</p>
+          </statement>
+          <feedback>
+            <p>Incorrect, try again.</p>
+          </feedback>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>It runs slowly for large inputs.</p>
+          </statement>
+          <feedback>
+            <p>Correct! It repeats the same recursive calls, making it unnecessarily slow.</p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>It sometimes results in infinite recursion.</p>
+          </statement>
+          <feedback>
+            <p>Incorrect, try again.</p>
+          </feedback>
+        </choice>
+      </choices>
+    </exercise>
+
+    <p>We can improve the function above by using dynamic programming to avoid repeating the same recursive calls over and over again.</p>
+
+    <listing>
+    <caption>Counting Tilings with Dynamic Programming</caption>
+    <program interactive='activecode' language="python" label="program-activecode-tiling-dynamic">
+        <code>
+        def num_tilings(n):
+          tiling_array = [1,1,2]
+          for i in range(3, n+1):
+            tiling_array.append(tiling_array[-1]+tiling_array[-2])
+          return tiling_array[n]
+
+        print(num_tilings(10))
+        </code>
+    </program>
+</listing>
+
+<exercise label="tiling50">
+            <title>Tiling a <m>1\times 50</m> Board</title>
+
+            <statement>
+                <p>Using the code above, how many ways can you tile a <m>1\times 50</m> board using <m>1\times 1</m> blue tiles and <m>1\times 2</m> red tiles? <var width="16"/></p>
+            </statement>
+            <setup>
+                <var>
+                    <condition number="20365011074">
+                        <feedback>
+                            <p>Correct!</p>
+                        </feedback>
+                    </condition>
+                    <condition string=".*">
+                        <feedback>
+                            <p>Incorrect, try again. Call the function <c>num_tilings</c> on 50.</p>
+                        </feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
+
 
 </section>
